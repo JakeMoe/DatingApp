@@ -1,3 +1,4 @@
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { CommonModule } from '@angular/common';
 import { FileUploadModule } from 'ng2-file-upload';
@@ -9,6 +10,7 @@ import { ToastrModule } from 'ngx-toastr';
 @NgModule({
   declarations: [],
   imports: [
+    BsDatepickerModule.forRoot(),
     BsDropdownModule.forRoot(),
     CommonModule,
     FileUploadModule,
@@ -19,6 +21,7 @@ import { ToastrModule } from 'ngx-toastr';
     })
   ],
   exports: [
+    BsDatepickerModule,
     BsDropdownModule,
     FileUploadModule,
     NgxGalleryModule,
